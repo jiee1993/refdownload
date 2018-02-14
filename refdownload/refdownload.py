@@ -26,7 +26,7 @@ Contributors:
 Michael Hall (https://github.com/mbhall88)
 """
 import requests
-import arguments
+from refdownload import arguments  # todo: need to set project up as package
 
 
 """raw code to download

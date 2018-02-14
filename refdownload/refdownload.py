@@ -1,4 +1,4 @@
-""""This is a program to download reference fasta files from NCBI using their
+"""This is a program to download reference fasta files from NCBI using their
 accession number(s). The fasta file(s) will be either written to file or, in
 the case of a single file, written to stdout.
 
@@ -15,6 +15,10 @@ Examples:
     # download M. bovis and E. coli references
     python3 refdownload.py NC_002945.4 U00096.3 -o Data/References/
 
+Notes:
+    If multiple accession IDs are given, but --output_dir is not specified,
+    output_dir will default to the current working directory.
+
 Please see the GitHub page for more information
 https://github.com/mbhall88/refdownload/
 
@@ -22,7 +26,7 @@ Contributors:
 Michael Hall (https://github.com/mbhall88)
 """
 import requests
-import refdownload.arguments as arguments
+import arguments
 
 
 def main():

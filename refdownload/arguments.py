@@ -20,7 +20,7 @@ def generate_args(doc):
                         default='-')
 
     parser.add_argument('accession',
-                        metavar='acc_num',
+                        metavar='accn',
                         type=str,
                         nargs='+',
                         help='Accession/Version ID. e.g NC_002945.4')
